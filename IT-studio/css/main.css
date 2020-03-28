@@ -319,9 +319,13 @@ nav {
 	padding: 0;
 }
 /*standards end*/
+
+/*works start*/
 	.ourWorks {
 		background-image: linear-gradient(0deg, #ffff 50%, #5F12D0 50%, #504DB5 10%);
 		max-width: 1920px;
+		margin: 0 auto;
+		padding: 0 20px;
 	}
 
 	.ourWorks-container {
@@ -331,7 +335,7 @@ nav {
 		align-items: center;
 		max-width: 1110px;
 		margin: 0 auto;
-		padding: 100px 20px 0 20px;
+		padding-top: 100px;
 	}
 
 	.ourWorks-top {
@@ -365,7 +369,7 @@ nav {
 		border: none;
 		border-radius: 30px;
 		box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-		padding: 14px 36px;
+		padding: 14px 45px;
 	}
 	
 	.ourWorks-items {
@@ -404,6 +408,7 @@ nav {
 
 	.ourWorks__img img {
 		width: 100%;
+		margin: 0;
 	}
 	
 	.ourWorks__name {
@@ -438,6 +443,87 @@ nav {
 	border-bottom: 1px solid #E0E0E0;
 	margin-bottom: 85px;
 }
-/*our-works start*/
-
 /*our-works end*/
+
+/*projects start*/
+.projects {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 20px;
+	background-color: #F6F6F8;
+}
+
+.projects-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	max-width: 1110px;
+	margin: 0 auto;
+	padding-top: 100px;
+	
+}
+
+.projects-title {
+	font-size: 36px;
+	margin-bottom: 50px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.projects-text {
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #999;
+	text-align: center;
+	max-width: 730px;
+	margin-bottom: 70px;
+}
+
+.projects-items {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.project-item {
+	max-width: 255px;
+	max-height: 255px;
+	margin-right: 30px;
+}
+
+.project-item:last-child {
+	margin-right: 0;
+}
+
+.project__img {
+	width: 100%;
+	margin: 0;
+}
+
+.project__btn {
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
+	text-decoration: none;
+	background-color: #4985FF;
+	border: none;
+	border-radius: 30px;
+	box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+	padding: 16px 45px;
+	margin-bottom: 130px;
+}
+
+/*projects end*/
+
+
+
+
+
