@@ -4,7 +4,7 @@
 		max-width: 1024px;
 	}
 
-	nav {
+	.header-top nav {
 		transform: translateX(7vw);
 	}
 
@@ -173,8 +173,114 @@
 		max-width: 330px;
 		margin-bottom: 25px;
 	}
+	/*our-works end*/
 
-/*our-works end*/
+	/*projects start*/
+	.projects {
+		max-width: 1024px;
+		padding: 0 15px;
+	}
+
+	.projects-container {
+		max-width: 930px;
+		padding-top: 80px;
+	}
+
+	.projects-title {
+		margin-bottom: 50px;
+	}
+
+	.projects-text {
+		max-width: 730px;
+		margin-bottom: 70px;
+	}
+
+	.projects-items {
+		margin-bottom: 50px;
+	}
+
+	.project-item {
+		max-width: 200px;
+		max-height: 200px;
+	}
+
+	.project__btn {
+		margin-bottom: 100px;
+	}
+	/*projects end*/
+
+	/*about start*/
+	.about {
+		max-width: 1024px;
+		padding: 0 15px;
+		background-size: 100% 70%;
+	}
+
+	.about-container {
+		padding-top: 70px;
+	}
+
+	.about-title {
+		margin-bottom: 30px;
+	}
+
+	.about-text {
+		font-size: 16px;
+		margin-top: 0;
+		margin-bottom: 55px;
+	}
+
+	.about-wrap {
+		max-width: 730px;
+		max-height: 330px;
+		margin-bottom: 70px;
+	}
+
+	.about-btn {
+
+		position: absolute;
+		font-size: 14px;
+		width: 250px;
+		height: 78px;
+		border-radius: 200px;
+		top: calc(50% - 39px);
+		left: calc(50% - 125px);
+	}
+
+	.about__btn {
+		width: 45px;
+		height: 45px;
+		margin-right: 18px;
+	}
+
+	.about-line {
+		margin-bottom: 70px;
+	}
+	/*about end*/
+
+	/*sibscribe start*/
+
+	.subscribe {
+		max-width: 1024px;
+		padding: 0 15px;
+	}
+	/*sibscribe start*/
+
+	/*footer start*/
+.footer {
+	max-width: 1024px;
+	padding: 0 15px;
+}
+
+.footer-container {
+	max-width: 930px;
+	padding-top: 48px;
+}
+
+.footer-title {
+	font-size: 16px;
+}
+/*footer end*/
 
 }
 
@@ -188,7 +294,7 @@
 		height: 60px;
 	}
 
-	nav {
+	.header-top nav {
 		transform: none;
 	}
 
@@ -410,4 +516,198 @@
 		font-size: 16px;
 	}
 /*our-works end*/
+
+	/*projects start*/
+	.projects {
+		max-width: 768px;
+	}
+
+	.projects-container {
+		max-width: 768px;
+		padding-top: 55px;
+	}
+
+	.projects-title {
+		font-size: 27px;
+		margin-bottom: 35px;
+	}
+
+	.projects-text {
+		font-size: 14px;
+		line-height: 24px;
+		max-width: 610px;
+		margin-bottom: 50px;
+	}
+
+	.projects-items {
+		display: grid;
+		grid-template: 1fr 1fr / 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 30px;
+    margin-bottom: 50px;
+    max-width: 80%;
+	}
+
+	.project-item {
+		max-width: 255px;
+		max-height: 255px;
+		margin-right: 0;
+	}
+
+	.project__btn {
+		font-size: 14px;
+		padding: 16px 45px;
+		margin-bottom: 80px;
+	}
+	/*projects end*/
+
+	/*about start*/
+	.about {
+		max-width: 768px;
+		background-size: 100% 55%;
+	}
+
+	.about-container {
+		padding-top: 70px;
+	}
+
+	.about-title {
+		font-size: 27px;
+		margin-bottom: 20px;
+	}
+
+	.about-text {
+		font-size: 14px;
+		margin-bottom: 48px;
+	}
+
+	.about-wrap {
+		max-width: 610px;
+		max-height: 276px;
+		margin-bottom: 65px;
+	}
+
+	.about-btn {
+		font-size: 14px;
+		width: 190px;
+		height: 58px;
+		border-radius: 200px;
+		top: calc(50% - 29px);
+		left: calc(50% - 95px);
+	}
+
+	.about__btn {
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+	}
+
+	.about-line {
+		margin-bottom: 65px;
+	}
+/*about end*/
+
+/*sibscribe start*/
+.subscribe {
+	max-width: 768px;
 }
+
+.subscribe-title {
+	font-size: 17px;
+	margin-bottom: 17px;
+}
+
+.subscribe-text {
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+
+.subscribe-form {
+	width: 440px;
+	height: 40px;
+	margin-bottom: 25px;
+}
+
+.subscribe-email {
+	margin-left: 33px;
+}
+
+.subscribe-email::placeholder {
+	font-size: 12px;
+}
+
+.sibsribe-btn {
+	font-size: 14px;
+	border: none;
+	border-radius: 0 30px 30px 0;
+	padding: 12px 32px;
+}
+
+.subscribe-info {
+	font-size: 13px;
+	margin-bottom: 55px;
+}
+/*sibscribe end*/
+
+	/*footer start*/
+.footer {
+	max-width: 768px;
+}
+
+.footer-container {
+	max-width: 700px;
+	padding-top: 48px;
+}
+
+.footer-nav {
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr;
+	grid-gap: 30px;
+	align-items: start;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.footer-column {
+	justify-self: center;
+}
+
+
+.footer-title {
+	font-size: 15px;
+	margin-bottom: 25px;
+}
+
+.footer-list li {
+	margin-bottom: 15px;
+}
+
+.footer-link {
+	font-size: 13px;
+}
+
+.footer_email:before {
+	margin-right: 10px;
+}
+
+.footer_phone:before {
+	margin-right: 10px;
+}
+.footer_arrow:before {
+	margin-right: 10px;
+}
+.footer_map:before {
+	margin-right: 10px;
+}
+
+.footer-line {
+	margin-bottom: 20px;
+}
+
+.footer-rights {
+	font-size: 10px;
+}
+/*footer end*/
+}
+
