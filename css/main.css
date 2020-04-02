@@ -19,9 +19,11 @@ a {
 .header-title {
 	font-size: 35px;
 	text-align: center;
+	margin-top: 100px;
 	margin-bottom: 50px;
 	font-weight: 800;
 	text-transform: uppercase;
+	color: #002984;
 }
 
 .main {
