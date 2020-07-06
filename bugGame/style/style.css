@@ -1,0 +1,362 @@
+.container {
+	background: url(../img/Background.png);
+	max-width: 1920px;
+	min-width: 320px;
+	height: 100vh;
+	margin: 0 auto;
+	font-family: 'Roboto';
+	font-weight: bold;
+	color: #fff;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.main .none {
+	display: none;
+}
+
+.content {
+	width: 80%;
+	height: 80%;
+}
+
+.title {
+	font-size: 57px;
+	margin-bottom: 8px;
+}
+
+.subtitle {
+	font-size: 19px;
+	margin-bottom: 60px;
+}
+
+.levels {
+	display: flex;
+	flex-direction: column;
+	margin-left: 150px;
+	position: relative;
+}
+
+.level {
+	font-size: 50px;
+	margin-left: 0;
+	margin-bottom: 24px;
+	opacity: .9;
+	position: relative;
+}
+
+.level:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.level:hover:before,
+.level_active:before {
+	content: "";
+	background: url(../img/Rectangle.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: -46px;
+	top: 20px;
+}
+
+.low-level,
+.middle-level,
+.hard-level {
+	border: none;
+	background: none;
+	outline: none;
+	margin: 0;
+}
+
+.start {
+	margin-top: 112px;
+	width: 350px;
+	height: 95px;
+	color: #fff;
+	border-radius: 7px;
+	font-size: 32px;
+	font-family: 'Roboto';
+	background: #D62B2E;
+	border: none;
+	cursor: pointer;
+}
+
+.wrap {
+	position: absolute;
+	top: 49%;
+	left: 55%;
+	max-width: 400px;
+	width: 100%;
+	max-height: 350px;
+}
+
+.card-background {
+	position: absolute;
+	width: 218px;
+	height: 341px;
+}
+
+.bottom-card {
+	transform: rotate(11.9deg);
+	z-index: 1;
+}
+
+.top-card {
+	transform: rotate(39.26deg);
+	z-index: 2;
+	top: 20px;
+	right: 5px;
+}
+
+/*game-map*/
+.game-map {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 25px;
+	justify-items: center;
+	margin: 0 5em;
+}
+
+.cards_hard {
+	grid-template-columns: repeat(5, 1fr);    
+}
+
+.card {
+	width: 222px;
+	height: 345px;
+	perspective: 1000px;
+	cursor: pointer;
+}
+
+.card-wrap {
+	width: 100%;
+	height: 100%;
+	color: #f4f4f4;
+	position: relative;
+	bottom: 0;
+	transform-style: preserve-3d;
+	transition: all 0.6s;
+}
+
+.card-hover:hover {
+	transform: rotate(-7deg);
+	bottom: 15px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card-item_over,
+.card-item_back,
+.card-item_bug {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+}
+.card-item_over {  
+	background: url(../img/gameover.png) center no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+}
+.card-item_bug {
+	background: url(../img/bug_card.png) center no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+}
+.card-item_back {
+	background: url(../img/back.png) center no-repeat;
+	background-size: cover;
+}
+.card_click {
+	transform: rotateY(180deg);
+} 
+
+
+/* адаптив для смартфонов */
+
+@media (max-width: 1270px)  {
+	
+	.cards_hard {
+		grid-template-columns: repeat(3, 1fr);
+		height: 100vh;
+	}
+	
+	.wrap {
+	top: 46%;
+	left: 53%;
+	max-width: 345px;
+}
+
+}
+
+
+@media (max-width: 1025px) {
+	
+	.title {
+		font-size: 45px;
+	}
+
+	.subtitle {
+		font-size: 16px;
+		margin-bottom: 45px;
+	}
+
+	.levels {
+		margin-left: 100px;
+	}
+
+	.level {
+		font-size: 45px;
+		margin-bottom: 23px;
+	}
+	
+	.wrap {
+		top: 39%;
+		left: 52%;
+		max-width: 329px;
+	}
+
+	.card-background {
+		width: 191px;
+		height: 297px;
+	}
+
+	.start {
+		margin-top: 70px;
+		width: 330px;
+    height: 85px;
+    border-radius: 8px;
+    font-size: 34px;
+	}
+
+}
+
+
+@media (max-width: 870px) {
+	
+	.main {
+		margin: 60px auto;
+		height: auto;
+	}
+
+	.wrap {
+		display: none;
+	}
+
+	.game-map {
+		grid-gap: 15px;
+	}
+
+	.card {
+		width: 120px;
+		height: 195px;
+	}
+
+}
+
+
+@media (max-width: 540px) {
+	
+	.title {
+		line-height: 50px;
+	}
+
+	.title,
+	.level {
+		font-size: 38px;
+	}
+
+	.subtitle {
+		font-size: 16px;
+		margin-bottom: 34px;
+		line-height: 25px;
+	}
+
+	.levels {
+		margin-left: 0;
+		margin-left: 65px;
+		align-items: center;
+	}
+
+	.level {
+		margin-bottom: 20px;
+	}
+
+	.start {
+		width: 100%;
+		font-size: 38px;
+	}
+
+	.content {
+		align-items: flex-start;
+	}
+
+	.game-map {
+		grid-gap: 12px;
+	}
+
+	.card {
+		width: 110px;
+		height: 174px;
+	}
+
+	.cards_hard {
+		height: 0;
+	}
+
+}
+
+
+@media (max-width: 370px) {
+	
+	.content {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.title {
+		line-height: 42px;
+	}
+
+	.subtitle {
+		margin-bottom: 26px;
+		line-height: 22px;
+	}
+
+	.levels {
+		margin-left: 35px;
+	}
+
+	.level {
+		font-size: 35px;
+		margin-bottom: 14px;
+	}
+
+	.start {
+		width: 75%;
+		font-size: 30px;
+		margin-top: 25px;
+		height: 70px;
+	}
+
+	.game-map {
+		grid-gap: 10px;
+	}
+
+	.card {
+		width: 93px;
+		height: 145px;
+	}
+
+}

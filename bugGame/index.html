@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style/style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<title>Bug Game</title>
+</head>
+<body class="container">
+	<main class="main">
+		<div class="content" id="content">
+			<h2 class="title">Выберите уровень сложности:</h2>
+			<h4 class="subtitle">Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.</h4>
+			<nav class="levels" id="levels">
+				<label for="" class="level level_active">Простой
+					<input class="low-level" id ="low-level" type="button">
+				</label>
+				<label for="" class="level">Средний
+					<input class="middle-level" id ="middle-level" type="button">
+				</label>
+				<label for="" class="level">Сложный
+					<input class="hard-level" id ="hard-level" type="button">
+				</label>
+			</nav>
+			<button class="start" id="start">Начать игру</button>
+			<div class="wrap">
+				<img src="img/back.png" alt="" class="card-background top-card">
+				<img src="img/back.png" alt="" class="card-background bottom-card">
+			</div>
+		</div>
+		<div class="game-map none" id="game-map"></div>
+	</main>
+	<script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
