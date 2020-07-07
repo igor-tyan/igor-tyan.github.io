@@ -116,17 +116,6 @@ function startGame () {
 	createBug(currentLevelForStart, numberOfBack);
 
 	flipCards();
-
-
-
-}
-
-// функция для удаления карт
-function deleteElements() {
-    const game = getById('game-map');
-    while (game.firstChild) {
-       game.removeChild(game.firstChild);
-    }
 }
 
 //Работа с кнопкой "Начать игру"
